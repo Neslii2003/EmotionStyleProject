@@ -1,3 +1,11 @@
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' # Gereksiz logları gizle
+try:
+    import pkg_resources
+except ImportError:
+    import pip
+    pip.main(['install', 'setuptools'])
+    import pkg_resources
 import setuptools
 import sys
 import os
