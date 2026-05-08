@@ -1,17 +1,14 @@
 import os
 import sys
 
-# 1. ORTAM AYARLARI VE HATA ENGELLEME
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # TensorFlow uyarılarını gizle
-
-# Bazı kütüphanelerin aradığı eski 'pkg_resources' paketini setuptools üzerinden güvene al
 try:
     import pkg_resources
 except ImportError:
-    try:
-        from setuptools import pkg_resources
-    except ImportError:
-        pass
+    import setuptools
+    # Bu satır, pkg_resources'ı zorla sisteme tanıtır
+    sys.modules['pkg_resources'] = setuptools.pkg_resources 
+
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 import streamlit as st
 import tensorflow as tf
