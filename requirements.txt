@@ -3,5 +3,6 @@ tensorflow-cpu==2.15.0
 tensorflow-hub
 deepface
 opencv-python-headless==4.8.0.74
+setuptools
 pillow
 numpy<2.0.0
