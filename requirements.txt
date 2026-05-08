@@ -1,6 +1,7 @@
 streamlit
-tensorflow-cpu
+tensorflow-cpu==2.15.0
 tensorflow-hub
 deepface
-opencv-python-headless
-numpy
+opencv-python-headless==4.8.0.74
+pillow
+numpy<2.0.0
