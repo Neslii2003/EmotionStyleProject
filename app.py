@@ -3,7 +3,7 @@ import os
 import numpy as np
 from PIL import Image
 
-# 1. Klasör ve Kütüphane Yollarını Yapılandır
+
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # libs klasörünü Python'a tanıt
