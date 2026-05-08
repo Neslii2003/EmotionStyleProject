@@ -1,7 +1,0 @@
-streamlit
-tensorflow
-tensorflow-hub
-deepface
-opencv-python
-pillow
-numpy
