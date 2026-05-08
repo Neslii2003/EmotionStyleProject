@@ -1,8 +1,8 @@
 streamlit
 tensorflow-cpu==2.15.0
-tensorflow-hub
+tensorflow-hub==0.16.1
 deepface
-opencv-python-headless==4.8.0.74
-setuptools
+opencv-python-headless
+setuptools==69.5.1
 pillow
 numpy<2.0.0
